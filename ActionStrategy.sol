@@ -9,7 +9,7 @@ interface ActionStrategy {
         MAGICAL_PARRY,
         DODGE
     }
-    
+
     /**
      * Choisi l'action d'un avatar lors d'un tour d'un combat.
      *
@@ -20,5 +20,11 @@ interface ActionStrategy {
      * @param damagesAdv blessures subites depuis le debut du combats
      * @return l'action de l'avatar pour le tour courant
      */
-    function chooseNextAction(Action previousAdvAction, address avatar, int damages, address avatarAdv, int damagesAdv) external view returns(Action action);
+    function chooseNextAction(
+        Action previousAdvAction,
+        address avatar,
+        int256 damages,
+        address avatarAdv,
+        int256 damagesAdv
+    ) external view returns (Action action);
 }

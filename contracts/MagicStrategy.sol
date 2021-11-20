@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.6.0;
 import "./ActionStrategy.sol";
 import "./AvatarInterface.sol";
 
-contract FirstStrategy is ActionStrategy {
+contract MagicStrategy is ActionStrategy {
     function chooseNextAction(
         Action previousAdvAction,
         address avatar,

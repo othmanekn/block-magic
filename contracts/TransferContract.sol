@@ -1,6 +1,6 @@
 pragma solidity >=0.4.22 <0.6.0;
 
-contract TransferContract {
+contract TransfertContract {
     mapping(address => uint256) public balances;
     address payable wallet;
 
